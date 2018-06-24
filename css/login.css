@@ -1,0 +1,217 @@
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.com {
+  width: 1200px;
+  margin: 0 auto; }
+
+header {
+  position: relative;
+  font-size: 11px;
+  color: #6c6c6c; }
+  header h1.iconfont {
+    float: left;
+    margin-top: 24px;
+    font-size: 50px;
+    color: #ff4400; }
+  header .sugest {
+    position: absolute;
+    top: 22px;
+    left: 304px;
+    width: 900px;
+    height: 28px;
+    border: 1px solid #ffb4a8;
+    text-align: center;
+    line-height: 28px; }
+  header span {
+    float: right;
+    margin-top: 66px;
+    line-height: 37px; }
+    header span b {
+      font-size: 16px;
+      color: #ff4400; }
+
+#banner {
+  position: relative;
+  height: 600px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  background: url(/img/loginbanner.jpg) center; }
+  #banner .banner_login {
+    position: absolute;
+    right: 160px;
+    width: 350px;
+    height: 350px;
+    padding: 7px;
+    box-sizing: border-box;
+    background: #e9e9f2; }
+  #banner #erweima p {
+    float: left;
+    font-size: 16px;
+    color: #3c3c3c;
+    margin-top: 35px;
+    margin-left: 26px;
+    font-weight: bold;
+    margin-bottom: 34px; }
+  #banner #erweima b {
+    float: right;
+    font-size: 41px;
+    cursor: pointer;
+    color: #ff4400; }
+  #banner #erweima span {
+    position: absolute;
+    top: 5px;
+    right: 58px;
+    display: block;
+    height: 26px;
+    width: 141px;
+    border: 1px solid #f3d995;
+    text-align: center;
+    line-height: 26px;
+    font-size: 11px;
+    color: #df9c1f;
+    background: #fefcee; }
+    #banner #erweima span i {
+      color: #df9c1f; }
+    #banner #erweima span b {
+      position: absolute;
+      top: 8px;
+      left: 141px;
+      width: 0;
+      height: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #e9e9f2;
+      border-left-color: #fefcee; }
+  #banner #erweima img {
+    width: 140px;
+    height: 140px;
+    margin-left: 98px;
+    margin-bottom: 27px; }
+  #banner #erweima .login_con {
+    overflow: hidden;
+    margin-left: 83px;
+    width: 176px;
+    height: 31px;
+    font-size: 11px;
+    margin-bottom: 17px; }
+    #banner #erweima .login_con a {
+      color: #9c9c9c;
+      margin-right: 3px; }
+    #banner #erweima .login_con li {
+      float: left;
+      color: #9c9c9c; }
+    #banner #erweima .login_con li:first-child a {
+      font-size: 34px;
+      margin-left: -5px; }
+    #banner #erweima .login_con li:nth-child(3) a {
+      color: #ff4400; }
+    #banner #erweima .login_con li:nth-child(4) {
+      margin-right: 2px; }
+    #banner #erweima .login_con li:nth-child(5) a {
+      color: #ff4400; }
+  #banner #erweima ul.sub_forget {
+    margin-right: 22px; }
+    #banner #erweima ul.sub_forget li {
+      float: left; }
+      #banner #erweima ul.sub_forget li a {
+        color: #6c6c6c;
+        margin-right: 16px; }
+  #banner #zhanghao {
+    display: none; }
+    #banner #zhanghao p {
+      float: left;
+      font-size: 16px;
+      color: #3c3c3c;
+      margin-top: 35px;
+      margin-left: 26px;
+      font-weight: bold;
+      margin-bottom: 34px; }
+    #banner #zhanghao b {
+      float: right;
+      font-size: 41px;
+      cursor: pointer;
+      color: #ff4400; }
+    #banner #zhanghao span {
+      position: absolute;
+      top: 5px;
+      right: 58px;
+      display: block;
+      height: 26px;
+      width: 141px;
+      border: 1px solid #f3d995;
+      text-align: center;
+      line-height: 26px;
+      font-size: 11px;
+      color: #df9c1f;
+      background: #fefcee; }
+      #banner #zhanghao span i {
+        color: #df9c1f; }
+      #banner #zhanghao span b {
+        position: absolute;
+        top: 8px;
+        left: 141px;
+        width: 0;
+        height: 0;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #e9e9f2;
+        border-left-color: #fefcee; }
+    #banner #zhanghao form label {
+      margin-left: 18px;
+      float: left;
+      width: 41px;
+      height: 42px;
+      font-size: 22px;
+      text-align: center;
+      line-height: 42px;
+      color: white;
+      background: #ddd; }
+    #banner #zhanghao form input {
+      padding-left: 9px;
+      box-sizing: border-box;
+      float: left;
+      height: 40px;
+      width: 258px;
+      border: 1px solid #ddd;
+      border-left: none;
+      margin-bottom: 20px; }
+    #banner #zhanghao form #submit {
+      margin-left: 18px;
+      margin-bottom: 23px;
+      border-radius: 2px;
+      width: 300px;
+      height: 42px;
+      line-height: 42px;
+      background: #ff4400;
+      font-size: 14px;
+      color: #fff;
+      text-align: center; }
+    #banner #zhanghao .weilog {
+      margin-left: 18px;
+      height: 17px; }
+      #banner #zhanghao .weilog p {
+        margin: 0;
+        margin-right: 22px;
+        margin-bottom: 20px;
+        float: left;
+        font-size: 11px;
+        color: #6c6c6c; }
+        #banner #zhanghao .weilog p b {
+          float: none;
+          font-size: 16px;
+          margin-right: 3px;
+          color: #e52425; }
+    #banner #zhanghao .forget {
+      margin-right: 22px; }
+      #banner #zhanghao .forget li {
+        float: left;
+        font-size: 11px; }
+        #banner #zhanghao .forget li a {
+          color: #6c6c6c;
+          margin-right: 14px; }

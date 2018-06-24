@@ -16,7 +16,10 @@
 				url('img/icon/iconfont.svg#iconfont') format('svg');
 				}
 		</style>
-
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/search_text.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/sidebar.js"></script>-->
+		<script src="js/lunbo.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="top">
@@ -42,7 +45,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="">亲，请登录</a>
+					<a href="html/login.html">亲，请登录</a>
 					<a href="">免费注册</a>
 				</li>
 				<li><a href="">手机逛淘宝</a></li>
@@ -243,6 +246,8 @@
 					<i></i>
 					<form action="" method="">
 						<input type="text" name="search_text" id="search_text" placeholder="沙发坐垫" />
+						<ul id="lianx">
+						</ul>
 						<div id="search_file_wrap">
 							<input type="file" name="search_file" id="search_file" value="" />
 						</div>
@@ -269,14 +274,14 @@
 		</header>
 		<nav>
 			<div id="navwrap" class="com">
-				<ul id="navcon1">
+				<ul id="navcon1" class="fl">
 					<li><a href="">主题市场</a></li>
 					<li><a href="">天猫</a></li>
 					<li><a href="">聚划算</a></li>
 					<li><a href="">天猫超市</a></li>
 					<li>|</li>
 				</ul>
-				<ul id="navcon2">
+				<ul id="navcon2" class="fl">
 					<li><a href="">淘抢购</a></li>
 					<li><a href="">电器城</a></li>
 					<li><a href="">司法拍卖</a></li>
@@ -284,7 +289,7 @@
 					<li><a href="">兴农扶贫</a></li>
 					<li>|</li>
 				</ul>
-				<ul id="navcon3">
+				<ul id="navcon3" class="fl">
 					<li><a href="">飞猪旅行</a></li>
 					<li><a href="">智能生活</a></li>
 					<li><a href="">苏宁易购</a></li>
@@ -292,6 +297,7 @@
 				</ul>
 			</div>
 		</nav>
+		
 		
 		<div id="navsubwrap" class="com">
 			<div id="navsub">
@@ -316,10 +322,25 @@
 				</ul>
 				<div id="navsub_center" class="fl">
 					<div class="lunbo">
-						<ul>
+						<ul id="lunboo">
+							<li><a href=""><img src="img/lunbo.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/lunbo1.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/lunbo2.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/lunbo3.jpg" alt="" /></a></li>
+							<li><a href=""><img src="img/lunbo4.jpg" alt="" /></a></li>
 							<li><a href=""><img src="img/lunbo.jpg" alt="" /></a></li>
 						</ul>
-						<div class="ad"></div>
+						<ul id="promo">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<ul id="lr">
+							<li></li>
+							<li></li>
+						</ul>
 					</div>
 					<div class="sm_lunbo">
 						<div class="lunbo_top">
@@ -337,7 +358,13 @@
 						</div>
 					</div>
 				</div>
+				<div id="ad" class="fl">
+					<img src="/img/ad.jpg" alt="" />
+					<p>今日热卖</p>
+					<img src="/img/ad1.jpg" alt="" />
+				</div>
 				<div id="navsub_right">
+
 					<div id="log">
 						<img src="img/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_50x50.jpg" alt="" />
 						<span>Hi!你好</span>
@@ -429,7 +456,461 @@
 						</div>
 					</div>
 				</div>
+				<div id="nav_toutiao" class="cl">
+					<div class="tou_left fl">
+						<img src="/img/taobaotoutiao.png" alt="" />
+						<p>让你的生活更有趣</p>
+					</div>
+					<dl class="tou_right fl">
+						<dt>
+							<a href=""><img src="/img/taotiaodt.png" alt="" /></a>
+						</dt>
+						<dd>
+							<h3>
+								<a href="">618新技能：以旧换新享优惠</a>
+								<span><a href="">更多&gt;</a></span>
+							</h3>
+							<p><a href="">甜蜜约会，怎么能让头发干枯毛躁没有光泽？不管穿的多美，发型不好看也是不够吸睛。么能让头发干枯毛躁没有光泽？</a></p>
+						</dd>
+					</dl>
+				</div>
 			</div>
 		</div>
+		<div id="life_search" class="com">
+			<div class="tit">
+				<a href=""><img src="/img/lifestyle.png"/></a>
+				<p>发现属于你的生活方式</p>
+			</div>
+			<div class="dlwrap cl">
+				<dl>
+					<dt><img src="/img/dlimg.jpg"/></dt>
+					<dd>
+						<span><a href="">理想家</a></span>
+						<i><a href="">想要这个家</a></i>
+						<strong><a href="">人气990430</a></strong>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="/img/dlimg1.jpg"/></dt>
+					<dd>
+						<b><a href="">理想家</a></b>
+						<i><a href="">想要这个家</a></i>
+						<strong><a href="">人气990430</a></strong>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="/img/dlimg2.jpg"/></dt>
+					<dd>
+						<b><a href="">理想家</a></b>
+						<i><a href="">想要这个家</a></i>
+						<strong><a href="">人气990430</a></strong>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="/img/dlimg3.jpg"/></dt>
+					<dd>
+						<b><a href="">理想家</a></b>
+						<i><a href="">想要这个家</a></i>
+						<strong><a href="">人气990430</a></strong>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="/img/dlimg4.jpg"/></dt>
+					<dd>
+						<b><a href="">理想家</a></b>
+						<i><a href="">想要这个家</a></i>
+						<strong><a href="">人气990430</a></strong>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="/img/dlimg5.jpg"/></dt>
+					<dd>
+						<b><a href="">理想家</a></b>
+						<i><a href="">想要这个家</a></i>
+						<strong><a href="">人气990430</a></strong>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="have_good" class="com">
+			<div class="good_left fl">
+				<div class="tit1">
+					<a href=""><img src="/img/good.png"/></a>
+					<p><a href="">与品质生活不期而遇</a></p>
+					<span><a href="">换一换</a></span>
+				</div>
+				<div class="dl_wrap">
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con1.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con2.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con3.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con4.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con5.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con6.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+				</div>
+				
+			</div>
+			<div class="good_left  fr">
+				<div class="tit1">
+					<a href=""><img src="/img/good.png"/></a>
+					<p><a href="">与品质生活不期而遇</a></p>
+					<span><a href="">换一换</a></span>
+				</div>
+				<div class="dl_wrap">
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con1.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con2.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con3.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con4.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con5.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+					<dl class="dl_con">
+						<dt>
+							<img src="/img/dl-con6.jpg"/>
+						</dt>
+						<dd>
+							<span id="">
+								<a href="">FENDI 连帽羽绒服</a>
+							</span>
+							<p><a href="">清新的橄榄绿，啊撒上是aaa说aaaa</a></p>
+							<b><a href="">6人说好</a></b>
+						</dd>
+					</dl>
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	<div id="qiang" class="com">
+		<div class="qiang_tit">
+			<img src="img/qiang_img.png" alt="" />
+			<div class="daoji fl">
+				<b>距结束</b>
+				<span>11</span>
+				<i>:</i>
+				<span>11</span>
+				<i>:</i>
+				<span>11</span>
+			</div>
+			<div class="tit_r fr">
+				<span><a href="">换一换</a></span>
+				<b><a href="">更多&gt;</a></b>
+			</div>
+		</div>
+		<div class="qiangwrap cl">
+			<dl class="qiang_dl">
+				<dt>
+					<img src="/img/qiang1.jpg" alt="" />
+				</dt>
+				<dd>
+					<h4><a href="">Apple iPhone 8 Plus 64G</a></h4>
+					<p><a href="">前一小时减5</a></p>
+					<div class="price fl">
+						<span>￥</span>
+						<span>56</span>
+					</div>
+					<div class="priceold fl">
+						<span>￥</span>
+						<span>89.00</span>
+					</div>
+					
+				</dd>
+			</dl>
+			<dl class="qiang_dl">
+				<dt>
+					<img src="/img/qiang1.jpg" alt="" />
+				</dt>
+				<dd>
+					<h4><a href="">Apple iPhone 8 Plus 64G</a></h4>
+					<p><a href="">前一小时减5</a></p>
+					<div class="price fl">
+						<span>￥</span>
+						<span>56</span>
+					</div>
+					<div class="priceold fl">
+						<span>￥</span>
+						<span>89.00</span>
+					</div>
+					
+				</dd>
+			</dl>
+			<dl class="qiang_dl">
+				<dt>
+					<img src="/img/qiang1.jpg" alt="" />
+				</dt>
+				<dd>
+					<h4><a href="">Apple iPhone 8 Plus 64G</a></h4>
+					<p><a href="">前一小时减5</a></p>
+					<div class="price fl">
+						<span>￥</span>
+						<span>56</span>
+					</div>
+					<div class="priceold fl">
+						<span>￥</span>
+						<span>89.00</span>
+					</div>
+					
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div id="end" class="com cl">
+		<div class="endtit">
+			<span></span>
+			<b>END</b>
+			<span></span>
+		</div>
+		<ul class="endlist com">
+			<li>
+				<h4>
+					<i class="iconfont"></i>
+					消费者保障
+				</h4>
+				<p>
+					<span><a href="">保障范围</a></span>
+					<span><a href="">退货退款流程</a></span>
+					<span><a href="">服务中心</a></span>
+					<span><a href="">更多特色服务</a></span>
+				</p>
+			</li>
+			<li>
+				<h4>
+					<i class="iconfont"></i>
+					新手上路
+				</h4>
+				<p>
+					<span><a href="">保障范围</a></span>
+					<span><a href="">退货退款流程</a></span>
+					<span><a href="">服务中心</a></span>
+					<span><a href="">更多特色服务</a></span>
+				</p>
+			</li>
+			<li>
+				<h4>
+					<i class="iconfont"></i>
+					付款方式
+				</h4>
+				<p>
+					<span><a href="">保障范围</a></span>
+					<span><a href="">退货退款流程</a></span>
+					<span><a href="">服务中心</a></span>
+					<span><a href="">更多特色服务</a></span>
+				</p>
+			</li>
+			<li>
+				<h4>
+					<i class="iconfont"></i>
+					淘宝特色
+				</h4>
+				<p>
+					<span><a href="">保障范围</a></span>
+					<span><a href="">退货退款流程</a></span>
+					<span><a href="">服务中心</a></span>
+					<span><a href="">更多特色服务</a></span>
+				</p>
+			</li>
+		</ul>
+	</div>
+	<footer>
+			<div id="footcon" class="com">
+				<ul class="link">
+					<li><a href="">阿里巴巴集团</a></li>
+					<li>|</li>
+					<li><a href="">阿里巴巴国际站</a></li>
+					<li>|</li>
+					<li><a href="">阿里巴巴中国站</a></li>
+					<li>|</li>
+					<li><a href="">全球速卖通</a></li>
+					<li>|</li>
+					<li><a href="">淘宝网</a></li>
+					<li>|</li>
+					<li><a href="">天猫</a></li>
+					<li>|</li>
+					<li><a href="">聚划算</a></li>
+					<li>|</li>
+					<li><a href="">一淘</a></li>
+					<li>|</li>
+					<li><a href="">阿里妈妈</a></li>
+					<li>|</li>
+					<li><a href="">飞猪</a></li>
+					<li>|</li>
+					<li><a href="">虾米</a></li>
+					<li>|</li>
+					<li><a href="">阿里云计算</a></li>
+					<li>|</li>
+					<li><a href="">云OS</a></li>
+					<li>|</li>
+					<li><a href="">万网</a></li>
+					<li>|</li>
+					<li><a href="">支付宝</a></li>
+					<li>|</li>
+					<li><a href="">来往</a></li>
+				</ul>
+				<div class="about cl">
+					<span><a href="">关于淘宝</a></span>
+					<span><a href="">合作伙伴</a></span>
+					<span><a href="">营销中心</a></span>
+					<span><a href="">廉政举报</a></span>
+					<span><a href="">联系客服</a></span>
+					<span><a href="">开放平台</a></span>
+					<span><a href="">诚征英才</a></span>
+					<span><a href="">联系我们</a></span>
+					<span><a href="">网站地图</a></span>
+					<span><a href="">法律声明及隐私权政策</a></span>
+					<span><a href="">@ 2018 Taobao.com 版权所有</a></span>
+				</div>
+				<ul class="zhengshu">
+					<li><a href="">网络文化经营许可证:浙网文[2016]0132-032号</a></li>
+					<li>|</li>
+					<li><a href="">增值电信业务经营许可证:浙B2-20080224-1</a></li>
+					<li>|</li>
+					<li><a href="">信息网络传播视听节目许可证:1109364</a></li>
+				</ul>
+				<ul class="gongan">
+					<li>
+						<span></span>
+						<a href="">浙公网安备 33010002000078号</a>
+					</li>
+					<li>|</li>
+					<li><a href="">(浙)网械平台备字[2018]第00004号</a></li>
+					<li>|</li>
+					<li><a href="">出版物网络交易平台服务经营备案证：新出发浙备字第002号</a></li>
+					<li>|</li>
+					<li><a href="">互联网药品信息服务资格证书编号：(浙)-经营性-2018-0010</a></li>
+				</ul>
+				<ul class="imglist">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+	</footer>
 	</body>
 </html>
