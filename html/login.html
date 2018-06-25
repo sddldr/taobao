@@ -16,6 +16,8 @@
 			  url('../img/loginicon/iconfont.svg#iconfont') format('svg');
 			}
 		</style>
+		<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<header>
@@ -32,7 +34,7 @@
 		<div id="banner" class="cl">
 			<div id="erweima" class="banner_login">
 				<p>手机扫码，安全登录</p>
-				<b class="iconfont">&#xe615;</b>
+				<b class="iconfont" id="qieh">&#xe615;</b>
 				<span>
 					<i class="iconfont">&#xe677;</i>
 					密码登录在这里
@@ -49,10 +51,13 @@
 				</ul>
 				<ul class="sub_forget cl fr">
 					<li><a href="">密码登录</a></li>
-					<li><a href="">免费注册</a></li>
+					<li><a href="logzhuce.html">免费注册</a></li>
 				</ul>
 			</div>
 			<div id="zhanghao" class="banner_login">
+				<div class="error none">
+					你输入的密码和帐户名不匹配，是否<mark>忘记密码</mark>或<mark>忘记会员名</mark>
+				</div>
 				<p>密码登录</p>
 				<b class="iconfont">&#xe615;</b>
 				<span>
@@ -62,10 +67,10 @@
 				</span>
 				<form action="" method="" class="cl">
 					<label for="" class="iconfont">&#xe7a3;</label>
-					<input type="text" name="" id="" placeholder="会员名/邮箱/手机号" />
+					<input type="text" name="" id="user" placeholder="会员名/邮箱/手机号" />
 					<label for="" class="iconfont">&#xe6aa;</label>
-					<input type="password" name="" id="" value="" />
-					<input type="submit" value="登录" id="submit"/>
+					<input type="password" name="" id="psw" value="" />
+					<input type="button" value="登录" id="submit"/>
 				</form>
 				<div class="weilog cl">
 					<p>
@@ -80,7 +85,7 @@
 				<ul class="forget cl fr">
 					<li><a href="">忘记密码</a></li>
 					<li><a href="">忘记会员名</a></li>
-					<li><a href="">免费注册</a></li>
+					<li><a href="logzhuce.html">免费注册</a></li>
 				</ul>
 			</div>
 		</div>

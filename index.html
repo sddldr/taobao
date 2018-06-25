@@ -18,10 +18,19 @@
 		</style>
 		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/search_text.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script src="js/sidebar.js"></script>-->
+		<script src="js/sidebar.js"></script>
 		<script src="js/lunbo.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<ul id="huati">
+			<li><a href="javascript:void(0)">爱逛好货</a></li>
+			<li><a href="javascript:void(0)">好店直播</a></li>
+			<li><a href="javascript:void(0)">品质特色</a></li>
+			<li><a href="javascript:void(0)">实惠热卖</a></li>
+			<li><a href="javascript:void(0)">猜你喜欢</a></li>
+			<li><a href="javascript:void(0)">反馈</a></li>
+			<li><a href="javascript:void(0)">暴恐举报</a></li>
+		</ul>
 		<div id="top">
 			<div id="topcon" class="com">	
 			<ul class="top-l fl">
@@ -48,7 +57,7 @@
 					<a href="html/login.html">亲，请登录</a>
 					<a href="">免费注册</a>
 				</li>
-				<li><a href="">手机逛淘宝</a></li>
+				<li><a href="html/xiangq.html">手机逛淘宝</a></li>
 			</ul>
 			<ul class="top-r fr">
 				<li>
@@ -234,7 +243,9 @@
 		<header>
 			<div id="header" class="com">
 				<h1 id="logo">
-				<a href=""></a>
+				<a href="">
+					<img src="img/logo.png"/>
+				</a>
 				</h1>
 				
 				<div id="search">
@@ -347,13 +358,37 @@
 							<span></span>
 							<b>理想生活上天猫</b>
 							<strong>
-								<i>1</i>
+								<i id="num"></i>
 								/ 6
 							</strong>
 						</div>
 						<div class="sm_lunbo_con">
-							<ul>
-								<li></li>
+							<ul id="slunbo">
+								<li>
+									<img src="img/sl1.jpg"/>
+								</li>
+								<li>
+									<img src="img/sl2.jpg"/>
+								</li>
+								<li>
+									<img src="img/sl3.jpg"/>
+									
+								</li>
+								<li>
+									<img src="img/sl4.jpg"/>
+									
+								</li>
+								<li>
+									<img src="img/sl5.jpg"/>
+									
+								</li>
+								<li>
+									<img src="img/sl6.jpg"/>
+									
+								</li>
+								<li>
+									<img src="img/sl1.jpg"/>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -532,7 +567,7 @@
 				</dl>
 			</div>
 		</div>
-		<div id="have_good" class="com">
+		<div id="have_good" class="com" lou_data= "0">
 			<div class="good_left fl">
 				<div class="tit1">
 					<a href=""><img src="/img/good.png"/></a>
@@ -773,7 +808,225 @@
 			</dl>
 		</div>
 	</div>
-	<div id="end" class="com cl">
+	
+	<div class="quyandai com">
+		<img src="/img/yandai.jpg" alt="" />
+	</div>
+	
+	<div id="haodian" class="com" lou_data = "1">
+		<div class="meiri fl">
+			<div class="meiri_tit">
+				<b>
+					<img src="img/meri.png"/>
+				</b>
+				<i>
+					<a href="">发现深藏的好店</a>
+				</i>
+				<span>
+					<a href="">更多&gt;</a>
+				</span>
+			</div>
+			<ul class="daytui">
+				<li>
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				<li class="no_mr">
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				<li class="no_mr">
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="live fl">
+			<div class="meiri_tit">
+				<b>
+					<img src="img/meri.png"/>
+				</b>
+				<i>
+					<a href="">发现深藏的好店</a>
+				</i>
+				<span>
+					<a href="">更多&gt;</a>
+				</span>
+			</div>
+			<ul class="daytui">
+				<li>
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				<li class="no_mr">
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				<li>
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				<li class="no_mr">
+					<h4><a href="">今日推荐</a><span>暂无店铺评价</span></h4>
+					<div class="imglist">
+						<div class="imgwrap">
+							<img src="img/img1.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img2.jpg" alt="" />
+						</div>
+						<div class="imgwrap1">
+							<img src="img/img3.jpg" alt="" />
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<div id="shishang" class="com">
+		<div class="shishang_l fl">
+			<div class="shishang_l_t">
+				<h3>
+					<a href="">时尚爆料王</a>
+				</h3>
+			</div>
+			<ul class="shishang_l_b">
+			<li>
+				<h4><a href="">腔调</a></h4>
+				<p><a href="">全球创意设计师平台</a></p>
+				<img src="/img/shishang1.png"/>
+				<img src="/img/shishang2.png"/>
+			</li>
+			<li>
+				<h4><a href="">腔调</a></h4>
+				<p><a href="">全球创意设计师平台</a></p>
+				<img src="/img/shishang1.png"/>
+				<img src="/img/shishang2.png"/>
+			</li>
+			<li>
+				<h4><a href="">腔调</a></h4>
+				<p><a href="">全球创意设计师平台</a></p>
+				<img src="/img/shishang1.png"/>
+				<img src="/img/shishang2.png"/>
+			</li>
+		</ul>
+		</div>
+		<div class="shishang_r fr">
+			<img src="/img/bai.jpg" alt="" />
+		</div>
+	</div>
+	
+<div id="pinzhi" class="com" lou_data ="2">
+	<div class="pinzhi_l">
+		<div class="shishang_l_t">
+				<h3>
+					<a href="">品质生活家</a>
+				</h3>
+		</div>
+		<ul class="pinzhi_b">
+			<li>
+				<img src="/img/shafa.png" alt="" />
+			</li>
+			<li>
+				<img src="/img/naifen.png" alt="" />
+			</li>
+			<li>
+				<img src="/img/jiaoyu.png" alt="" />
+			</li>
+			<li>
+				<img src="/img/jiyoujia.png" alt="" />
+			</li>
+			<li>
+				<img src="/img/huaniao.png" alt="" />
+			</li>
+			<li>
+				<img src="/img/jiu.png" alt="" />
+			</li>
+			<li>
+				<img src="/img/yao.png" alt="" />
+			</li>
+		</ul>
+	</div>
+</div>
+	
+<div id="end" class="com cl">
 		<div class="endtit">
 			<span></span>
 			<b>END</b>

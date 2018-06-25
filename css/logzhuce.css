@@ -1,0 +1,63 @@
+#banner .banner_top {
+  border-bottom: 1px solid #ddd; }
+  #banner .banner_top .zhuc_tit {
+    overflow: hidden; }
+    #banner .banner_top .zhuc_tit h1 {
+      float: left;
+      width: 106px;
+      height: 57px;
+      margin-top: 22px;
+      margin-right: 10px;
+      margin-bottom: 21px; }
+      #banner .banner_top .zhuc_tit h1 img {
+        width: 100%; }
+    #banner .banner_top .zhuc_tit p {
+      float: left;
+      font-size: 22px;
+      font-weight: 400;
+      margin-top: 31px; }
+  #banner .banner_top .titbar {
+    margin-left: 260px;
+    height: 46px;
+    line-height: 46px; }
+    #banner .banner_top .titbar li {
+      float: left;
+      font-size: 16px;
+      color: #ddd;
+      padding: 0 41px 0 15px;
+      box-sizing: border-box; }
+
+#banner .banner_bot {
+  height: 388px; }
+  #banner .banner_bot form {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    box-sizing: border-box; }
+    #banner .banner_bot form label {
+      float: left;
+      width: 70px;
+      line-height: 30px;
+      font-size: 16px;
+      color: #000; }
+    #banner .banner_bot form input {
+      width: 200px;
+      height: 30px;
+      margin-bottom: 10px; }
+    #banner .banner_bot form #submit {
+      width: 180px;
+      height: 36px;
+      background: #ddd;
+      font-size: 15px;
+      color: #000;
+      border: none; }
+  #banner .banner_bot .shitiwrap {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto; }
+    #banner .banner_bot .shitiwrap .tishi, #banner .banner_bot .shitiwrap .tishi1 {
+      position: absolute;
+      width: 200px;
+      height: 100px; }
