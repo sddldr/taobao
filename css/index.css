@@ -651,16 +651,16 @@ nav {
     height: 22px;
     margin-bottom: 22px;
     margin-right: 12px; }
-  #qiang .qiang_tit .daoji {
+  #qiang .qiang_tit #daoji {
     margin-top: -1px;
     height: 20px;
     line-height: 20px;
     color: #999; }
-    #qiang .qiang_tit .daoji b {
+    #qiang .qiang_tit #daoji b {
       float: left;
       margin-top: 4px;
       margin-right: 3px; }
-    #qiang .qiang_tit .daoji span {
+    #qiang .qiang_tit #daoji span {
       float: left;
       margin-top: 2px;
       width: 20px;
@@ -671,7 +671,7 @@ nav {
       text-align: center;
       line-height: 20px;
       color: #ff504b; }
-    #qiang .qiang_tit .daoji i {
+    #qiang .qiang_tit #daoji i {
       color: #ff9700;
       float: left;
       margin-right: 3px; }

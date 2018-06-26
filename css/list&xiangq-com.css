@@ -1,0 +1,80 @@
+header {
+  height: 70px;
+  border-bottom: 1px dotted #ff4400; }
+  header .header_l li {
+    float: left; }
+  header .header_l li:first-child {
+    width: 107px;
+    height: 44px;
+    margin-top: 12px;
+    padding-right: 24px;
+    border-right: 1px solid #ddd; }
+  header .header_l li:nth-child(2) {
+    margin-top: 15px;
+    border-right: 1px solid #ddd;
+    padding: 0 14px 0 11px; }
+    header .header_l li:nth-child(2) p {
+      color: #000;
+      font-weight: 900;
+      margin-bottom: 6px; }
+      header .header_l li:nth-child(2) p b {
+        float: right;
+        margin-left: 10px;
+        width: 16px;
+        height: 16px;
+        background: url(../img/big.png) -259px 0 no-repeat; }
+    header .header_l li:nth-child(2) span i {
+      width: 16px;
+      height: 16px;
+      float: left;
+      background: url(../img/TB17JRyFVXXXXXhXpXXxPfUFXXX-16-16.gif) center; }
+  header .header_l li:nth-child(3) {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    height: 40px;
+    border-right: 1px solid #ddd; }
+    header .header_l li:nth-child(3) .header_scro div {
+      float: left;
+      box-sizing: border-box;
+      width: 32px;
+      height: 42px; }
+      header .header_l li:nth-child(3) .header_scro div span {
+        line-height: 19px; }
+        header .header_l li:nth-child(3) .header_scro div span strong {
+          float: right;
+          width: 9px;
+          height: 14px;
+          background: url(../img/arrow.png) -6px -6px; }
+  header form {
+    margin-top: 12px; }
+    header form #keyword {
+      float: left;
+      width: 282px;
+      height: 26px;
+      border: 2px solid #ff4400; }
+    header form #searchone {
+      float: left;
+      text-align: center;
+      line-height: 30px;
+      width: 71px;
+      height: 30px;
+      background: #ff4400;
+      color: #fff;
+      border: none; }
+    header form #searchtwo {
+      float: left;
+      margin-left: 3px;
+      width: 70px;
+      height: 30px;
+      background: #ffe4d0;
+      border: 1px solid #ffb086;
+      text-align: center;
+      line-height: 28px; }
+  header p {
+    margin-top: 8px;
+    font-size: 11px; }
+    header p a {
+      color: #3c3c3c; }
+    header p a:nth-child(1) {
+      margin-right: 43px; }

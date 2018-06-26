@@ -1,11 +1,14 @@
 $(function(){
-   /* var url = "https://dc.3.cn/category/get?callback=?";
+   var url = "https://dc.3.cn/category/get?callback=?";
 	$.getJSON(url,function(data){
-		console.log(data);
-	})*/
+		var a = data.data[0].b[0].split("|")[1];
+		var b = a.toString();
+		console.log(a);
+		console.log(b);
+	})
 	
 	//楼梯效果
-	$("#huati li").click(function(e){
+	/*$("#huati li").click(function(e){
 		var index = $(e.target).parent().index();
 		$("#huati li").css({background:"white"}).find("a").css({color:"#000"});
 		$("#huati li").eq(index).css({background:"red"}).find("a").css({color:"white"});
@@ -26,5 +29,14 @@ $(function(){
 		$("#huati li").eq(index1).css({background:"red"}).find("a").css({color:"white"});
 						}
 		})
-	})
+	})*/
+	
+	
+	
+	
+	//获取京东数据
+	/*var url = "https://dc.3.cn/category/get?callback=?";
+	$.getJSON(url,function(data){
+		console.log(data);
+	})*/
 })

@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>详情</title>
-		<link rel="stylesheet" type="text/css" href="/css/com.css"/>
+		<title>商品列表</title>
 		<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/xiangq.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/com.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/list&xiangq-com.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/goodlist.css"/>
 		<style type="text/css">
 			@font-face {
 				font-family: 'iconfont';
@@ -17,8 +17,8 @@
 				url('../img/icon/iconfont.svg#iconfont') format('svg');
 				}
 		</style>
-		<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/xiangq.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/click_list.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="top">
@@ -230,10 +230,10 @@
 		</div>
 	<!--header-->
 	<header>
-		<div id="header" class="com">
+		<div id="header" class="com cl">
 			<ul class="header_l fl">
-				<li><img src="../img/logo.png" alt="" /></li>
-				<li>
+				<li style="border-right:none;"><img src="../img/logo.png" alt="" /></li>
+				<!--<li>
 					<p>LOSS时尚坊厚底女鞋专
 						<b></b>
 					</p>
@@ -266,7 +266,7 @@
 							</span>
 						</div>
 					</div>
-				</li>
+				</li>-->
 				
 			</ul>
 			<div class="header_r">
@@ -276,181 +276,113 @@
 					<input type="button" name="searchtwo" id="searchtwo" value="搜本店" />
 					<!--<input type="button" name="" id="searchtwo" value="搜本店" />-->
 				</form>
-				<p class="cl fr">
-					<a href="">
-						<i></i>
-						收藏店铺
-					</a>
-					<a href="">
-						<i></i>
-						用手机逛本店
-					</a>
-				</p>
 			</div>
 		</div>
 		
+		
 	</header>
-	
-	<!--banner-->
-	<div id="banner">
-		<img src="../img/bbimg.jpg"/>
-	</div>
-	
-	<!--nav-->
-	<nav>
-		<ul class="">
-			<li><a href="">所有分类</a></li>
-			<li><a href="">首页</a></li>
-			<li><a href="">【搜罗所有鞋子点这里】</a></li>
-			<li><a href="">按季节选择</a></li>
-			<li><a href="">按风格选择</a></li>
-			<li><a href="">按跟高选择</a></li>
-			<li><a href="">【清仓特惠】</a></li>
-		</ul>
-	</nav>
-	
-	<!--detail-->
-	<div id="detail">
-		<div class="imgshow fl">
-			
-			<div id="imgwrap">
-				<div id="xiao"></div>
-				<div id="da">
-				<img src="../img/fangda.jpg" alt="" />
-			</div>
-				<img src="../img/fangda.jpg" alt="" />
-				
-			</div>
-			<ul class="suolue">
-					<li><a href=""><img src="../img/imgg1.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg2.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg3.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg4.jpg" alt="" /></a></li>
-					<!--<li><a href=""><img src="../img/imgg5.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg6.jpg" alt="" /></a></li>-->
+	<!--主要商品列表-->
+		<div id="main" class="com cl">
+			<div id="main_l" class="fl cl">
+				<div class="fenlei cl">
+					<span>所有分类 &gt;</span>
+					<b>收起筛选&gt;</b>
+				</div>	
+				<div class="fenleix">
 					
-				</ul>
-				<div class="imgb">
-					<span><a href="">收藏宝贝（250人气）</a></span> |
-					<span><a href="">分享</a></span>
 				</div>
-		</div>
-		<div class="pricejieshao fl">
-			<p>2017秋季新款真皮一脚蹬女鞋大头松糕鞋厚底乐福鞋休闲百搭单鞋女</p>
-			<div class="pricede">
-				<div class="pricede_t">
-					<span>价格</span>
-					<b>
-						<i>￥</i>
-						388.0
-					</b>
-					<ul class="fr">
-						<li>
-							<span>
-								11
-							</span>
-							<i>累计评论</i>
-						</li>
-						<li>
-							<span class="buyn">
-								0
-							</span>
-							<i>交易成功 	</i>
-						</li>
-					</ul>
+				<div class="zonghesort">
+					<div class="zonghep_t">
+						<ul>
+							<li>
+								<a href="">综合排序</a>
+							</li>
+							<li>
+								<a href="">人气</a>
+							</li>
+							<li>
+								<a href="">销量</a>
+							</li>
+							<li>
+								<a href="">信用</a>
+							</li>
+							<li>
+								<a href="">价格</a>
+							</li>
+						</ul>
+					</div>
+					<div class="zonghep_b">
+						<ul>
+							<li>
+								<span></span>
+								包邮
+							</li>
+							<li>
+								<span></span>
+								赠送退货运费险
+							</li>
+							<li>
+								<span></span>
+								货到付款
+							</li>
+							<li>
+								<span></span>
+								公益宝贝
+							</li>
+							<li>
+								<span></span>
+								二手
+							</li>
+							<li>
+								<span></span>
+								天猫
+							</li>
+							<li>
+								<span></span>
+								正品保障
+							</li>
+							<li>
+								<span></span>
+								7+天内退货
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="pricede_b">
-					<span>淘宝价</span>
-					<b class="price">
-						￥
-						258.00
-					</b>
-					<strong>
-						全民疯抢
-					</strong>
-				</div>
-			</div>
-			<div class="pricesub">
-				<span>优惠</span>
-				<b>淘金币可抵5.16元</b>
-				
-			</div>
-			<div class="wuliu">
-				<span>配送</span>
-				<b>广东广州</b>至
-				<b><a href="">河南郑州</a></b>快递
-				<strong>免运费</strong>72小时内发货
-			</div>
-			<div class="miaoshu">
-				<div class="miaoline1">
-					<span>尺码</span>
-					<ul>
-						<li>34</li>
-						<li>35</li>
-						<li>36</li>
-						<li>37</li>
-						<li>38</li>
-						<li>39</li>
-					</ul>
-				</div>
-				<div class="miaoline2">
-					<span>颜色分类</span>
-					<b>
-						<img src="../img/small.jpg" alt="" />
-					</b>
-				</div>
-				<div class="miaoline3">
-					<span>数量</span>
-					<ul>
-						<li>-</li>
-						<li>1</li>
-						<li>+</li>
-					</ul>
-					<b>
-						件（库存<i>277</i>件）
-					</b>
-				</div>
-				<div class="mai">
-					<span>立即购买</span>
-					<span>加入购物车</span>
-				</div>
-				<ul class="promise">
+				<ul id="goodlist">
 					<li>
-						<span>承诺</span>
-						<b>
-							<i><img src="../img/chen.jpg" alt="" /></i>
-							7天无理由
-						</b>
-					</li>
-					<li>
-						<span>支付</span>
-						<b>
-							<i><img src="../img/jifen.png" alt="" /></i>
-							集分宝
-						</b>
+						<img src="../img/yi.jpg" alt="" />
+						<ul id="suolue">
+							<li>
+								&lt;
+							</li>
+							<li><img src="../img/yi1.jpg" alt="" /></li>
+							<li><img src="../img/yi1.jpg" alt="" /></li>
+							<li><img src="../img/yi1.jpg" alt="" /></li>
+							<li><img src="../img/yi1.jpg" alt="" /></li>
+							<li><img src="../img/yi1.jpg" alt="" /></li>
+							<li>
+								&gt;
+							</li>
+						</ul>
+						<div class="price">
+							<strong>￥88.00</strong>
+							<b>包邮</b>
+							<i>18565人付款</i>
+						</div>
+						<div class="tit">
+							花花公子贵宾男士短袖T恤潮流2018新款夏季韩版夏装男半袖POLO衫
+						</div>
+						<div class="addre">
+							<span>qty2043</span>
+							<b>福建 泉州</b>
+						</div>
+						<div class="tu">
+							<span></span>
+						</div>
 					</li>
 				</ul>
 			</div>
+			<div id="main_r" class="fr"></div>
 		</div>
-		<div class="see fr">
-			<p>看了又看
-			<span></span></p>
-			<ul>
-				<li>
-					<img src="../img/xiez.jpg"/>
-					<p>￥248.00</p>
-				</li>
-				<li>
-					<img src="../img/xiez.jpg"/>
-					<p>￥248.00</p>
-				</li>
-				<li>
-					<img src="../img/xiez.jpg"/>
-					<p>￥248.00</p>
-				</li>
-			</ul>
-		</div>
-	</div>
-	
 	</body>
 </html>
