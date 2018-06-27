@@ -35,3 +35,6 @@ strong {
 
 i {
   font-style: normal; }
+
+li {
+  cursor: pointer; }

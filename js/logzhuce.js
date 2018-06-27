@@ -21,7 +21,7 @@ $(function(){
 						$(".tishi1").addClass("none");
 						$(".tishi2").addClass("none");
 						$(".tishi").removeClass("none");
-						window.location.href = "../index.html";
+						window.location.href = "login.html";
 					}
 					if(data==0){
 						$(".tishi").addClass("none");

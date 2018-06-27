@@ -2,10 +2,13 @@ $(function(){
 	setInterval(function(){
 		var oDate = new Date();
 		var newDate = new Date();
-		var weiDate = newDate.setHours(12,00,00);
+		var weiDate = newDate.setDate(29);
+		console.log(weiDate);
 		var a = oDate.getTime()/1000;
-		var b = newDate.getTime()/1000;
+		var b = weiDate.getTime()/1000;
 		var c = b-a;
+//		console.log(weiDate);
+		console.log(newDate.setDate(29));
 		var span1 = Math.floor(c/3600);
 		if(span1<10){
 			span1 = "0"+span1;

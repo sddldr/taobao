@@ -31,6 +31,9 @@ $(function(){
 		$("#xiao").css({display:"none"});
 		
 	})
+	$(".suolue").mouseover(function(e){
+		$("#imgwrap>img").attr("src",$(e.target).attr("src"));
+	})
 	
 	
 	//切换
@@ -71,7 +74,31 @@ $(function(){
 				f.shift();
 					$("ul.suolue>li").eq(i).find("a").find("img").attr("src",f.join(""));
 			}
+			//商品数量加减
+			$(".add>li").click(function(){
+				if($(this).index()==0){
+					if($("li.count").text()==0){
+						$("li.count").text(0);
+					}else{
+						$("li.count").text($("li.count").text()-1);
+					}
+				}
+				if($(this).index()==2){
+					$("li.count").text($("li.count").text()-0+1);
+				}
+			})
+			//推送商品详情到购物车
+			$("span.addcar").click(function(){
+				//获取商品总数
+				var count = $("li.count").text()
+//				console.log($("li.count").text());
+				console.log(val);
+				window.location.href = "addShopCar.html?data="+val+"&count="+count;
+			})
+			
 		}
 	});
+	
+	
 })
 

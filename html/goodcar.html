@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>详情</title>
-		<link rel="stylesheet" type="text/css" href="/css/com.css"/>
+		<title>购物车</title>
 		<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/xiangq.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/list&xiangq-com.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/goodcar.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/com.css"/>
+		
 		<style type="text/css">
 			@font-face {
 				font-family: 'iconfont';
@@ -17,8 +17,12 @@
 				url('../img/icon/iconfont.svg#iconfont') format('svg');
 				}
 		</style>
+
 		<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/xiangq.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		
+		<script src="../js/com.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/goodscar.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="top">
@@ -230,227 +234,72 @@
 		</div>
 	<!--header-->
 	<header>
-		<div id="header" class="com">
+		<div id="header" class="cl com">
 			<ul class="header_l fl">
-				<li><img src="../img/logo.png" alt="" /></li>
-				<li>
-					<p>LOSS时尚坊厚底女鞋专
-						<b></b>
-					</p>
-					<span>
-						<i></i>
-						<i></i>
-						<i></i>
-						<i></i>
-						<i></i>
-					</span>
-				</li>
-				<li>
-					<div class="header_scro">
-						<div>
-							<span>描述</span>
-							<span>4.7
-								<strong></strong>
-							</span>
-						</div>
-						<div>
-							<span>服务</span>
-							<span>4.7
-								<strong></strong>
-							</span>
-						</div>
-						<div>
-							<span>物流</span>
-							<span>4.7
-								<strong></strong>
-							</span>
-						</div>
-					</div>
-				</li>
-				
+				<li style="border-right:none;"><img src="../img/logo.png" alt="" /></li>
+				<li>购物车</li>
 			</ul>
-			<div class="header_r">
+			<div class="header_r fr">
 				<form action="" method="post" class="fr">
+					<label for="">宝贝</label>
 					<input type="text" name="" id="keyword" value="" />
-					<input type="button" value="搜淘宝" id="searchone"/>
-					<input type="button" name="searchtwo" id="searchtwo" value="搜本店" />
-					<!--<input type="button" name="" id="searchtwo" value="搜本店" />-->
+					<input type="button" value="搜索" id="searchone"/>
 				</form>
-				<p class="cl fr">
-					<a href="">
-						<i></i>
-						收藏店铺
-					</a>
-					<a href="">
-						<i></i>
-						用手机逛本店
-					</a>
-				</p>
 			</div>
 		</div>
-		
 	</header>
-	
-	<!--banner-->
-	<div id="banner">
-		<img src="../img/bbimg.jpg"/>
-	</div>
-	
-	<!--nav-->
-	<nav>
-		<ul class="">
-			<li><a href="">所有分类</a></li>
-			<li><a href="">首页</a></li>
-			<li><a href="">【搜罗所有鞋子点这里】</a></li>
-			<li><a href="">按季节选择</a></li>
-			<li><a href="">按风格选择</a></li>
-			<li><a href="">按跟高选择</a></li>
-			<li><a href="">【清仓特惠】</a></li>
+	<!--gooddetail-->
+	<!--<div id="goods" class="com">
+		<div class="goods_t">
+			<input type="checkbox" name="" id="" value="" />
+			<span>店铺</span>
+		</div>
+		<ul class="cl">
+			<li id="aimg">
+				<input type="checkbox" name="" id="" value="" />
+				<img src="" alt="" />
+				<p>圆领毛衣</p>
+			</li>
+			<li>
+				<p>颜色：</p>
+				<p>尺码：</p>
+			</li>
+			<li>
+				<span id="aprice">￥<i>229.00</i></span>
+				<ul class="numm">
+					<li>-</li>
+					<li><i>1</i></li>
+					<li>+</li>
+				</ul>
+				<b>
+					￥
+					<i>229</i>.00
+				</b>
+			</li>
+			<li>
+				<a href="">删除</a>
+			</li>
 		</ul>
-	</nav>
+	</div>-->
 	
-	<!--detail-->
-	<div id="detail">
-		<div class="imgshow fl">
-			
-			<div id="imgwrap">
-				<div id="xiao"></div>
-				<div id="da">
-				<img src="../img/fangda.jpg" alt="" />
-			</div>
-				<img src="../img/fangda.jpg" alt="" />
-				
-			</div>
-			<ul class="suolue">
-					<li><a href=""><img src="../img/imgg1.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg2.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg3.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg4.jpg" alt="" /></a></li>
-					<!--<li><a href=""><img src="../img/imgg5.jpg" alt="" /></a></li>
-					<li><a href=""><img src="../img/imgg6.jpg" alt="" /></a></li>-->
-					
-				</ul>
-				<div class="imgb">
-					<span><a href="">收藏宝贝（250人气）</a></span> |
-					<span><a href="">分享</a></span>
-				</div>
-		</div>
-		<div class="pricejieshao fl">
-			<p>2017秋季新款真皮一脚蹬女鞋大头松糕鞋厚底乐福鞋休闲百搭单鞋女</p>
-			<div class="pricede">
-				<div class="pricede_t">
-					<span>价格</span>
-					<b>
-						<i>￥</i>
-						388.0
-					</b>
-					<ul class="fr">
-						<li>
-							<span>
-								11
-							</span>
-							<i>累计评论</i>
-						</li>
-						<li>
-							<span class="buyn">
-								0
-							</span>
-							<i>交易成功 	</i>
-						</li>
-					</ul>
-				</div>
-				<div class="pricede_b">
-					<span>淘宝价</span>
-					<b class="price">
-						￥
-						258.00
-					</b>
-					<strong>
-						全民疯抢
-					</strong>
-				</div>
-			</div>
-			<div class="pricesub">
-				<span>优惠</span>
-				<b>淘金币可抵5.16元</b>
-				
-			</div>
-			<div class="wuliu">
-				<span>配送</span>
-				<b>广东广州</b>至
-				<b><a href="">河南郑州</a></b>快递
-				<strong>免运费</strong>72小时内发货
-			</div>
-			<div class="miaoshu">
-				<div class="miaoline1">
-					<span>尺码</span>
-					<ul>
-						<li>34</li>
-						<li>35</li>
-						<li>36</li>
-						<li>37</li>
-						<li>38</li>
-						<li>39</li>
-					</ul>
-				</div>
-				<div class="miaoline2">
-					<span>颜色分类</span>
-					<b>
-						<img src="../img/small.jpg" alt="" />
-					</b>
-				</div>
-				<div class="miaoline3">
-					<span>数量</span>
-					<ul class="add">
-						<li>-</li>
-						<li class="count">1</li>
-						<li>+</li>
-					</ul>
-					<b>
-						件（库存<i>277</i>件）
-					</b>
-				</div>
-				<div class="mai">
-					<span>立即购买</span>
-					<span class="addcar">加入购物车</span>
-				</div>
-				<ul class="promise">
-					<li>
-						<span>承诺</span>
-						<b>
-							<i><img src="../img/chen.jpg" alt="" /></i>
-							7天无理由
-						</b>
-					</li>
-					<li>
-						<span>支付</span>
-						<b>
-							<i><img src="../img/jifen.png" alt="" /></i>
-							集分宝
-						</b>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="see fr">
-			<p>看了又看
-			<span></span></p>
-			<ul>
-				<li>
-					<img src="../img/xiez.jpg"/>
-					<p>￥248.00</p>
-				</li>
-				<li>
-					<img src="../img/xiez.jpg"/>
-					<p>￥248.00</p>
-				</li>
-				<li>
-					<img src="../img/xiez.jpg"/>
-					<p>￥248.00</p>
-				</li>
-			</ul>
-		</div>
+	<div id="bot">
+		<input type="checkbox" name="" id="" value="" />
+		<span>全选</span>
+		<span>删除</span>
+		<span>清除失效宝贝</span>
+		<span>移入收藏夹</span>
+		<span>分享</span>
+		<ul>
+			<li>
+				已选商品<i>0</i>件
+			</li>
+			<li>
+				合计（不含运费）：<b>0.00</b>
+			</li>
+			<li>
+				<a href="">结算</a>
+			</li>
+		</ul>
 	</div>
-	
 	</body>
 </html>

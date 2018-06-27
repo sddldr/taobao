@@ -1,0 +1,127 @@
+header {
+  height: 96px;
+  width: 990px;
+  margin: 0 auto;
+  padding-top: 19px; }
+  header .header_l {
+    float: left; }
+    header .header_l li {
+      float: left; }
+    header .header_l li:first-child {
+      width: 103px;
+      height: 43px;
+      margin-right: 12px; }
+    header .header_l li:last-child {
+      font-size: 20px;
+      color: #000;
+      margin-top: 12px;
+      font-weight: bold; }
+  header .header_r form label {
+    float: left;
+    width: 75px;
+    height: 29px;
+    background: #f5f5f5;
+    border: 3px solid #ff5500;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    line-height: 29px; }
+  header .header_r form #keyword {
+    outline: none;
+    float: left;
+    width: 343px;
+    height: 29px;
+    border: 3px solid #ff5500;
+    border-left: none;
+    background: white;
+    padding-left: 10px; }
+  header .header_r form #searchone {
+    float: left;
+    width: 93px;
+    height: 35px;
+    background: #ff4400;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    text-align: center;
+    line-height: 35px; }
+
+#goodnew {
+  width: 990px;
+  margin: 0 auto; }
+  #goodnew dl dt {
+    float: left;
+    position: relative;
+    width: 198px;
+    height: 198px; }
+    #goodnew dl dt img {
+      height: 100%;
+      width: 100%; }
+    #goodnew dl dt p {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 32px;
+      height: 32px;
+      background: rgba(205, 255, 255, 0.2); }
+  #goodnew dl dd {
+    padding-left: 10px;
+    float: left;
+    padding-top: 3px; }
+    #goodnew dl dd p {
+      height: 23px;
+      line-height: 23px;
+      color: #808080; }
+    #goodnew dl dd span {
+      display: block;
+      height: 23px;
+      line-height: 23px;
+      color: #000;
+      margin-bottom: 21px; }
+    #goodnew dl dd b {
+      display: block;
+      color: #828282;
+      margin-bottom: 23px; }
+  #goodnew .countcar p {
+    text-align: right;
+    height: 29px;
+    line-height: 29px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 72px; }
+  #goodnew .countcar span {
+    display: block;
+    height: 29px;
+    line-height: 29px;
+    color: #ff4400;
+    text-align: right;
+    font-size: 15px;
+    margin-bottom: 2px; }
+  #goodnew .countcar b {
+    display: block;
+    text-align: right;
+    height: 22px;
+    line-height: 22px;
+    color: #000; }
+    #goodnew .countcar b i {
+      color: #ff4400; }
+  #goodnew .countcar ul {
+    float: right; }
+    #goodnew .countcar ul li {
+      float: left;
+      width: 178px;
+      height: 39px;
+      line-height: 39px;
+      border-radius: 1px;
+      text-align: center; }
+    #goodnew .countcar ul li:first-child {
+      border: 1px solid #ec6800;
+      margin-right: 10px; }
+      #goodnew .countcar ul li:first-child a {
+        color: #ec6800; }
+    #goodnew .countcar ul li:last-child {
+      background: #ec6800; }
+      #goodnew .countcar ul li:last-child a {
+        color: #fff; }

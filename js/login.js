@@ -38,7 +38,7 @@ $(function(){
 				}else if(data==2){
 					$(".error").css({display:"block"});
 				}else{
-					console.log("aaaaa");
+					$.cookie("userID",a,{expires:7,path:"/"});
 					window.location.href = "../index.html";
 				}
 			})

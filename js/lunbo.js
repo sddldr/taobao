@@ -8,7 +8,7 @@ $(function(){
 		$("#lunboo").css("top",-num*280);
 		$("#promo").find("li").css("background","white");
 		$("#promo li").eq(num-1).css("background","red");
-	},3000);
+	},1000);
 	$("#lunboo").mouseover(function(){
 		clearInterval(timer);
 	}).mouseleave(function(){
@@ -20,9 +20,11 @@ $(function(){
 			$("#lunboo").css("top",-num*280);
 			$("#promo").find("li").css("background","white");
 			$("#promo li").eq(num-1).css("background","red");
-		},3000);
+		},1000);
 	})
 	$("#promo li").click(function(){
+		$("#promo").find("li").css("background","white");
+		$(this).css("background","red");
 		var index = $(this).index()+1;
 		$("#lunboo").css("top",-(index-1)*280);
 		clearInterval(timer);
@@ -71,8 +73,5 @@ $(function(){
 		}
 	})
 	
-	//滑梯
-//	$("#huati").click(function(){
-//		
-//	})
+
 })

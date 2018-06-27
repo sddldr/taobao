@@ -8,7 +8,9 @@ $(function(){
 				
 					html+="<li><a href=''>"+data.result[i][0]+"</a></li>";
 			}
+			console.log(html);
 			$("#lianx").append($(html));
+			console.log($("#lianx"))
 		})
 	})
 	$("body").click(function(){

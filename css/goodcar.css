@@ -1,0 +1,157 @@
+header {
+  height: 96px;
+  padding-top: 19px; }
+  header .header_l {
+    float: left; }
+    header .header_l li {
+      float: left; }
+    header .header_l li:first-child {
+      width: 103px;
+      height: 43px;
+      margin-right: 12px; }
+    header .header_l li:last-child {
+      font-size: 20px;
+      color: #000;
+      margin-top: 12px;
+      font-weight: bold; }
+  header .header_r form label {
+    float: left;
+    width: 75px;
+    height: 29px;
+    background: #f5f5f5;
+    border: 3px solid #ff5500;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    line-height: 29px; }
+  header .header_r form #keyword {
+    outline: none;
+    float: left;
+    width: 343px;
+    height: 29px;
+    border: 3px solid #ff5500;
+    border-left: none;
+    background: white;
+    padding-left: 10px; }
+  header .header_r form #searchone {
+    float: left;
+    width: 93px;
+    height: 35px;
+    background: #ff4400;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    text-align: center;
+    line-height: 35px; }
+
+.goods {
+  height: 168px;
+  border: 1px solid #ddd; }
+  .goods .goods_t {
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 20px; }
+    .goods .goods_t input {
+      float: left;
+      height: 100%;
+      background: white;
+      border: 1px solid #ddd;
+      margin-right: 6px; }
+  .goods ul {
+    height: 130px;
+    margin-left: 20px; }
+    .goods ul li {
+      padding-top: 20px;
+      box-sizing: border-box;
+      float: left;
+      height: 100%; }
+    .goods ul li:first-child {
+      width: 327px;
+      border-right: 1px solid #ddd; }
+      .goods ul li:first-child input {
+        float: left;
+        margin-left: 20px; }
+      .goods ul li:first-child img {
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin-right: 10px; }
+    .goods ul li:nth-child(2) {
+      padding: 20px;
+      width: 160px; }
+    .goods ul li:nth-child(3) {
+      box-sizing: border-box;
+      margin-right: 63px; }
+      .goods ul li:nth-child(3) span {
+        float: left;
+        margin-left: 30px;
+        margin-top: 18px;
+        margin-right: 54px;
+        color: #000;
+        font-weight: 600; }
+      .goods ul li:nth-child(3) ul.numm {
+        float: left;
+        width: 77px;
+        height: 25px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        margin-right: 43px; }
+        .goods ul li:nth-child(3) ul.numm li {
+          margin: 0;
+          padding: 0;
+          width: 17px;
+          height: 23px;
+          text-align: center;
+          line-height: 23px;
+          background: #eeeeee;
+          float: left; }
+        .goods ul li:nth-child(3) ul.numm li:nth-child(2) {
+          background: white;
+          width: 39px; }
+      .goods ul li:nth-child(3) b {
+        color: red; }
+        .goods ul li:nth-child(3) b i {
+          color: red; }
+    .goods ul li:last-child {
+      float: right;
+      margin-right: 60px; }
+
+#bot {
+  width: 1190px;
+  position: fixed;
+  left: 9%;
+  bottom: 0;
+  height: 49px;
+  background: #e5e5e5;
+  line-height: 49px;
+  padding-left: 4px;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1; }
+  #bot input {
+    float: left;
+    height: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    margin-right: 6px; }
+  #bot span {
+    float: left;
+    color: #000;
+    margin-right: 33px; }
+  #bot ul {
+    width: 410px;
+    float: right; }
+    #bot ul li {
+      float: left; }
+    #bot ul li:first-child {
+      color: #494949;
+      margin-right: 50px; }
+      #bot ul li:first-child i {
+        color: #f43020; }
+    #bot ul li:nth-child(2) b {
+      font-size: 16px;
+      color: #f43020; }
+    #bot ul li:last-child {
+      float: right;
+      width: 119px;
+      text-align: center;
+      background: #b0b0b0; }

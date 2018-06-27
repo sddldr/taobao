@@ -1,11 +1,5 @@
 $(function(){
-   var url = "https://dc.3.cn/category/get?callback=?";
-	$.getJSON(url,function(data){
-		var a = data.data[0].b[0].split("|")[1];
-		var b = a.toString();
-		console.log(a);
-		console.log(b);
-	})
+   
 	
 	//楼梯效果
 	/*$("#huati li").click(function(e){
