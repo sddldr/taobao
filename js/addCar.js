@@ -1,7 +1,7 @@
 $(function(){
 	var addres = window.location.href;
 	var goodn = gn(addres);//商品参数信息
-	var nownum;
+	var nownum;//json数据原来数量
 	var add=0;
 	$.ajax({
 		type:"get",

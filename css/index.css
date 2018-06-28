@@ -177,24 +177,41 @@ nav {
     background: white;
     border: 1px solid #ff5000;
     border-top: none;
-    margin-right: 9px; }
+    margin-right: 9px;
+    overflow: visible; }
     #navsubwrap #navsub_left li {
-      border-bottom: 1px solid #ddd;
-      position: relative;
       color: #666;
-      width: 145px;
-      height: 32px;
-      line-height: 32px;
-      padding-left: 25px;
-      padding-right: 19px;
-      overflow: hidden;
+      overflow: visible;
       font-size: 14px;
       font-weight: 400;
       cursor: pointer; }
+      #navsubwrap #navsub_left li:hover {
+        background: #ddd; }
+      #navsubwrap #navsub_left li a {
+        display: block;
+        min-width: 189px;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 25px;
+        padding-right: 19px;
+        box-sizing: border-box;
+        color: #666666;
+        border-bottom: 1px solid #ddd; }
+      #navsubwrap #navsub_left li .xxx {
+        padding-top: 5px;
+        overflow: visible;
+        position: absolute;
+        left: 192px;
+        top: 0;
+        z-index: 100;
+        background: #fff;
+        min-width: 300px; }
+        #navsubwrap #navsub_left li .xxx li:hover {
+          background: #ddd; }
+        #navsubwrap #navsub_left li .xxx li a {
+          width: 500px; }
     #navsubwrap #navsub_left li:last-child {
       border: none; }
-    #navsubwrap #navsub_left a {
-      color: #666666; }
   #navsubwrap #navsub_center {
     margin-top: 10px;
     margin-right: 10px; }
@@ -210,6 +227,28 @@ nav {
       z-index: 3;
       width: 520px;
       overflow: hidden; }
+    #navsubwrap #navsub_center #pro-opt a {
+      width: 20px;
+      height: 30px;
+      display: block;
+      background: red;
+      line-height: 30px;
+      background: rgba(255, 255, 255, 0.6);
+      text-align: center; }
+    #navsubwrap #navsub_center #pro-opt a:first-child {
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 10; }
+    #navsubwrap #navsub_center #pro-opt a:last-child {
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      z-index: 10; }
     #navsubwrap #navsub_center #promo {
       position: absolute;
       z-index: 4;

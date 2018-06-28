@@ -49,6 +49,8 @@ $(function(){
 		data:{goodsID:val},
 		async:true,
 		success:function(data){
+//			data = JSON.parse(data[0].imgsUrl);
+			console.log(data);
 			var s = data.indexOf("(");
 			var d = data.slice(s+1);
 			var arr = d.split("");

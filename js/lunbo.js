@@ -1,26 +1,65 @@
 $(function(){
-	var num = 0;
+	var i = 0;
 	var timer = setInterval(function(){
-		num++;
-		if(num==6){
-			num=1;
-		}
-		$("#lunboo").css("top",-num*280);
-		$("#promo").find("li").css("background","white");
-		$("#promo li").eq(num-1).css("background","red");
-	},1000);
-	$("#lunboo").mouseover(function(){
+				move();
+			},2000);
+			
+			function move(){
+				var len = $("#lunboo li").length;
+				i++;
+				//两个临界值的判断
+				if(i==len){
+					$("#lunboo").position().top = 0;
+//					oImgList.style.left = 0;
+					i = 1;
+				}
+				
+				if(i==-1){
+					$("#lunboo").position().top = -280 * (len-1) + "px";
+					i = len - 2;
+				}
+				
+				
+				$("#lunboo").css("top",-i*280);
+			$("#promo").find("li").css("background","white");
+			$("#promo li").eq(i-1).css("background","red");
+				
+//				for(var j = 0; j < aNumList.length; j++){
+//					aNumList[j].className = "";
+//				}
+//				
+//				//从第三张图片往第四张变时，显示的是第一张，对应的角标要点亮	
+//				if(i==len-1){
+//					aNumList[0].className = "hover";
+//				}else{
+//					aNumList[i].className = "hover";
+//				}
+				
+				
+//				startMove(oImgList,{left:-perWidth*i});
+			}
+			
+			$("#pro-opt").click(function(e){
+//				console.log($(e.target).index());
+				if($(e.target).index()==0){
+					i = i - 2;
+					move();
+				}
+				if($(e.target).index()==1){
+					move();
+				}
+			})
+			
+			
+			
+			
+				
+	$(".lunbo").mouseover(function(){
 		clearInterval(timer);
 	}).mouseleave(function(){
 		timer = setInterval(function(){
-			num++;
-			if(num==6){
-				num=1;
-			}
-			$("#lunboo").css("top",-num*280);
-			$("#promo").find("li").css("background","white");
-			$("#promo li").eq(num-1).css("background","red");
-		},1000);
+				move();
+			},2000);
 	})
 	$("#promo li").click(function(){
 		$("#promo").find("li").css("background","white");
@@ -52,6 +91,22 @@ $(function(){
 			$("#num")[0].innerText = num1;
 		},1000);
 	})
+//	$("#pro-opt").click(function(e){
+//		console.log($(e.target).index());
+//		if($(e.target).index()==0){
+//			num++;
+//			if
+//			clearInterval(timer);
+//			$("#lunboo").css("top",$("#lunboo").position().top-280);
+//			
+//		}
+//	})
+	
+	
+	
+	
+	
+	
 	
 	
 	//固定scroll

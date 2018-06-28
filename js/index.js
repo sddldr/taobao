@@ -22,16 +22,47 @@ $(function(){
 			})*/
 			
 			//分类详情
-			/*$("#navsub_left").mouseover(function(e){
-				var addres = $(e.target).find("a").attr("href");
+			$("#navsub_left>li").mouseover(function(e){
+				
+				var addres = $(e.target).attr("href");
+				console.log(addres);
 				var xinxi = gn(addres);
+//				console.log(e.target);
 				console.log(xinxi["classID"]);
-				$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{classID:xinxi.classID},function(data){
+				$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{classID:xinxi["classID"]},function(data){
 					console.log(data);
+	
+//					console.log(data);
+						if(data!=0){
+							var str = ""; 	
+							var str = "<ul class='xxx'>";
+							$.each(data, function(index,item) {
+	
+								str += `<li><a href="html/xiangq.html?data=${item.goodsID}">${item.goodsName}</a></li>`;
+		
+							});
+							str = str + "</ul>";
+							console.log()
+							$(e.target).parent().append(str);
+						}
+					
+					
+					
+//						str = str + "</ul>";
+					
+//					console.log(html);
+					
+					console.log($(e.target)[0])
 				})
 				
 				
-			})*/
+			}).mouseleave(function(){
+				$(this).find("ul").find("li").remove();
+//				$(e.target).next().find("li");
+				$("#navsub_left>li").each(function(index,item){
+					$(item).find("ul").remove();
+				})
+			})
 			
 			
 		}

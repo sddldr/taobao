@@ -1,5 +1,7 @@
 $(function(){
 	//ajax获取购物车数据
+					var bb = 0;
+	
 	$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?",{userID:$.cookie("userID")},function(data){
 		console.log(data);
 		if(data!=0){
@@ -23,14 +25,14 @@ $(function(){
 					</li>
 					<li>
 						<span class="aprice">￥<i>${item.price}</i></span>
-						<ul class="numm" count=${item.number}>
+						<ul class="numm" count=${item.number} data=${item.goodsID}>
 							<li>-</li>
 							<li>${item.number}</li>
 							<li>+</li>
 						</ul>
 						<b>
 							￥
-							<i>${item.price*item.number}</i>.00
+							<i class="ttt">${Math.floor(item.price*item.number)}</i>.00
 						</b>
 					</li>
 					<li>
@@ -40,7 +42,8 @@ $(function(){
 			</div>`;
 			
 //		
-			$("body").append(html);
+//			$("body").append(html);
+			$("#main").append(html);
 //			
 			//选中功能
 			$(".fu").click(function(){
@@ -49,6 +52,30 @@ $(function(){
 			$("#bot").find("input").click(function(){
 				$(".fu").prop("checked",$(this).prop("checked"));
 				$(".zi").prop("checked",$(this).prop("checked"));
+				if($(this).prop("checked")){
+					var aa = 0;
+
+					$(".ttt").each(function(index,item){
+						console.log(item.innerText);
+						aa += (item.innerText-0);
+					})
+					$("#coo").text(aa);
+					
+					$(".numm").each(function(index,item){
+						bb += ($(item).children().eq(1).text()-0);
+					})
+					console.log(bb);
+					$(".ccc").text(bb);
+					
+					
+					$("#bot>ul li").last().css("background","red");
+				}else{
+					console.log("aaa");
+					$("#coo").text(0);
+					$(".ccc").text(0);
+					
+					$("#bot>ul li").last().css("background","blue");
+				}
 			})
 			
 			
@@ -78,10 +105,30 @@ $(function(){
 					nex.text(0);
 				}else{
 					nex.text(nex.text()-1);
+				//添加总价
+				var a = $(this).parent().prev().find("i").text()*nex.text();
+				a = Math.floor(a);
+				$(this).parent().parent().find("b").find("i").text(a);
 				}
+				
+				//更新数量
+				console.log($.cookie("userID"));
+				$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("userID"),goodsID:$(this).parent().attr("data"),number:nex.text()},function(data){
+					console.log(data);
+				})
 			}
 			if($(e.target).index()==2){
 				pre.text(pre.text()-0+1);
+				//添加总价
+				var b = $(this).parent().prev().find("i").text()*pre.text();
+				b = Math.floor(b);
+				$(this).parent().parent().find("b").find("i").text(b);
+				
+				//更新数量
+				console.log($.cookie("userID"));
+				$.get("http://datainfo.duapp.com/shopdata/updatecar.php",{userID:$.cookie("userID"),goodsID:$(this).parent().attr("data"),number:pre.text()},function(data){
+					console.log(data);
+				})
 			}
 		})
 		}
